@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65382870156A3EFE00CDBE49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6538286F156A3EFE00CDBE49 /* Foundation.framework */; };
-		65382876156A3EFE00CDBE49 /* THNJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 65382875156A3EFE00CDBE49 /* THNJSONUtilities.m */; };
+		65382876156A3EFE00CDBE49 /* THNJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 65382875156A3EFE00CDBE49 /* THNJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6538287E156A3EFE00CDBE49 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6538287D156A3EFE00CDBE49 /* SenTestingKit.framework */; };
 		65382880156A3EFE00CDBE49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6538287F156A3EFE00CDBE49 /* UIKit.framework */; };
 		65382881156A3EFE00CDBE49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6538286F156A3EFE00CDBE49 /* Foundation.framework */; };
@@ -30,16 +30,18 @@
 /* Begin PBXFileReference section */
 		6538286C156A3EFE00CDBE49 /* libTHNJSONUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTHNJSONUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6538286F156A3EFE00CDBE49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		65382873156A3EFE00CDBE49 /* THNJSONUtilities-Prefix.pch */ = {isa = PBXFileReference; path = "THNJSONUtilities-Prefix.pch"; sourceTree = "<group>"; };
-		65382874156A3EFE00CDBE49 /* THNJSONUtilities.h */ = {isa = PBXFileReference; path = THNJSONUtilities.h; sourceTree = "<group>"; };
+		65382873156A3EFE00CDBE49 /* THNJSONUtilities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THNJSONUtilities-Prefix.pch"; sourceTree = "<group>"; };
+		65382874156A3EFE00CDBE49 /* THNJSONUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THNJSONUtilities.h; sourceTree = "<group>"; };
 		65382875156A3EFE00CDBE49 /* THNJSONUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THNJSONUtilities.m; sourceTree = "<group>"; };
 		6538287C156A3EFE00CDBE49 /* THNJSONUtilitiesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THNJSONUtilitiesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6538287D156A3EFE00CDBE49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6538287F156A3EFE00CDBE49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		65382887156A3EFE00CDBE49 /* THNJSONUtilitiesTests-Info.plist */ = {isa = PBXFileReference; path = "THNJSONUtilitiesTests-Info.plist"; sourceTree = "<group>"; };
+		65382887156A3EFE00CDBE49 /* THNJSONUtilitiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THNJSONUtilitiesTests-Info.plist"; sourceTree = "<group>"; };
 		65382889156A3EFE00CDBE49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6538288B156A3EFE00CDBE49 /* THNJSONUtilitiesTests.h */ = {isa = PBXFileReference; path = THNJSONUtilitiesTests.h; sourceTree = "<group>"; };
+		6538288B156A3EFE00CDBE49 /* THNJSONUtilitiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THNJSONUtilitiesTests.h; sourceTree = "<group>"; };
 		6538288C156A3EFE00CDBE49 /* THNJSONUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THNJSONUtilitiesTests.m; sourceTree = "<group>"; };
+		65382897156A484A00CDBE49 /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Externals/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		65382898156A484A00CDBE49 /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Externals/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				65382871156A3EFE00CDBE49 /* THNJSONUtilities */,
 				65382885156A3EFE00CDBE49 /* THNJSONUtilitiesTests */,
+				65382896156A482D00CDBE49 /* Externals */,
 				6538286E156A3EFE00CDBE49 /* Frameworks */,
 				6538286D156A3EFE00CDBE49 /* Products */,
 			);
@@ -129,6 +132,15 @@
 				65382888156A3EFE00CDBE49 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65382896156A482D00CDBE49 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				65382897156A484A00CDBE49 /* JSONKit.h */,
+				65382898156A484A00CDBE49 /* JSONKit.m */,
+			);
+			name = Externals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
